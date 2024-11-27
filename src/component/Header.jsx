@@ -1,23 +1,26 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import assets from '../assets/assets'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiSearch } from "react-icons/fi";
 import { IoIosCart } from "react-icons/io";
+import { AiFillCloseSquare } from "react-icons/ai";
 import './Header.css'
 
 const Header = () => {
+  const [display, setDisplay] = useState(false)
   return (
-    <header className='bg-[#E87A00] text-white'>
-      <nav className='flex place-items-center justify-around max-w-[1280px] my-0 mx-auto xl:justify-between'>
+    <header className='bg-[#E87A00] text-white p-6 relative'>
+      {console.log(display)}
+      <nav className={`flex place-items-center justify-around max-w-[1280px] my-0 mx-auto xl:justify-between max-custom-md:justify-between ${display ? 'max-custom-md:hidden' : 'max-custom-md:flex'}`}>
         <Link to='/'>
-          <img src={assets.logo} width={'120px'} alt="" />
+          <img src={assets.afriHubLogo} width={'85px'} alt="" />
         </Link>
 
-        <ul className='flex place-items-center gap-7'>
+        <ul className='navbar flex place-items-center gap-7 max-custom-sm:hidden'>
           <li>
             <NavLink to='/'>Home</NavLink>
-            <hr className='w-1/4 mx-auto hidden border-orange-200 border-[1px]'/>  
+            <hr className='w-2/4 mx-auto hidden border-orange-200 border-[1px]'/>  
           </li>
           <li>
             <NavLink className='' to='/shop'>Shop</NavLink>
@@ -47,7 +50,7 @@ const Header = () => {
           </li>
         </ul>
 
-        <ul className='flex place-items-center gap-7'>
+        <ul className='flex place-items-center gap-7 max-custom-sm:hidden'>
           <li>
             <NavLink className='' to="/login">Log in</NavLink>
             <hr className='w-2/4 mx-auto hidden border-orange-200 border-[1px]'/>
@@ -56,8 +59,24 @@ const Header = () => {
             <hr className='w-2/4 mx-auto hidden border-orange-200 border-[1px]'/>
           </li>
         </ul>
-        <GiHamburgerMenu className='sm:hidden'/>
+        <GiHamburgerMenu onClick={() => setDisplay(!display)} className='hidden max-custom-sm:flex text-2xl cursor-pointer'/>
       </nav>
+
+      <div className={`sidebar hidden ${display ? "max-custom-md:flex" : 'max-custom-md:hidden'} absolute bg-[#E87A00] text-white w-screen h-screen top-0 left-0 bottom-0 p-8`}>
+        <nav className='w-full'>
+          <AiFillCloseSquare onClick={() => setDisplay(!display)} className='text-2xl cursor-pointer'/>
+          <ul className='grid gap-4 mt-4 '>
+            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg'} to='/'>Home</NavLink></li>
+            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/shop'>Shop</NavLink></li>
+            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/about'>About Us</NavLink></li>
+            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/collections'>Collection</NavLink></li>
+            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/male'>Male</NavLink></li>
+            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/female'>Female</NavLink></li>
+            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/login'>Log in</NavLink></li>
+            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/signup'>Sign up</NavLink></li>
+          </ul>
+        </nav>
+      </div>
     </header>
   )
 }

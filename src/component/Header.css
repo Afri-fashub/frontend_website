@@ -1,10 +1,14 @@
-a.active {
+.navbar a.active {
     line-height: 30px;
 }
 
-a.active + hr {
+.navbar a.active + hr {
     display: flex;
 
+}
+
+.sidebar a.active{
+    color: gray;
 }
 
 /* li a:hover {
