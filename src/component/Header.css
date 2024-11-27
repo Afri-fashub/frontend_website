@@ -1,0 +1,12 @@
+a.active {
+    line-height: 30px;
+}
+
+a.active + hr {
+    display: flex;
+
+}
+
+/* li a:hover {
+    color: green;
+} */
