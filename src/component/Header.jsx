@@ -62,7 +62,7 @@ const Header = () => {
         <GiHamburgerMenu onClick={() => setDisplay(!display)} className='hidden max-custom-sm:flex text-2xl cursor-pointer'/>
       </nav>
 
-      <div className={`sidebar hidden ${display ? "max-custom-md:flex" : 'max-custom-md:hidden'} absolute bg-[#E87A00] text-white w-screen h-screen top-0 left-0 bottom-0 p-8`}>
+      <div className={`sidebar hidden ${display ? "max-custom-md:flex" : 'max-custom-md:hidden'} absolute z-50 bg-[#E87A00] text-white w-screen h-screen top-0 left-0 bottom-0 p-8`}>
         <nav className='w-full'>
           <AiFillCloseSquare onClick={() => setDisplay(!display)} className='text-2xl cursor-pointer'/>
           <ul className='grid gap-4 mt-4 '>

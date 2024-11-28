@@ -9,7 +9,7 @@ import { ImPinterest2 } from "react-icons/im";
 
 const Footer = () => {
   return (
-    <footer className=''>
+    <footer className='p-6'>
       <nav className='grid grid-cols-5 justify-around max-w-[1250px] my-0 mx-auto xl:justify-between max-custom-md:justify-between'>
         <div className='grid items-center'>
           <h1 className='text-3xl font-semibold'>AFRI FASHUB</h1>
