@@ -9,4 +9,9 @@
   padding: 0;
   box-sizing: border-box;
   font-size: clamp(0.8rem, 0.7515rem + 0.2589vw, 1rem);
+  /* border: 1px solid red; */
+}
+
+img {
+  object-fit: cover;
 }

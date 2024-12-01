@@ -10,6 +10,8 @@ export default {
         'max-custom-md': { max: '850px' },  // Below 850px
         'max-custom-sm': { max: '768px' },  // Below 768px
         'max-custom-ssm': { max: '670px' },  // Below 670px
+        'max-custom-sssm': { max: '450px' }, // Below 450px
+        'max-custom-msm': { max: '550px' }, // Below 550px
         'min-custom-md': '768px' //Above 768px
       },
     },

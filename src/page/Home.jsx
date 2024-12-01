@@ -3,8 +3,16 @@ import './Home.css'
 import { Link } from 'react-router-dom'
 import WhoAreWe from '../component/homeComponents/WhoAreWe'
 import NewArrival from '../component/homeComponents/NewArrival'
+import MeetDesigner from '../component/homeComponents/MeetDesigner'
+import TestCarousel from '../component/homeComponents/TestCarousel'
+import NewDesign from '../component/homeComponents/NewDesign'
+import products from '../products.js'
+import InvestMoney from '../component/homeComponents/InvestMoney.jsx'
+import CustomerReview from '../component/homeComponents/CustomerReviews.jsx'
+import Suscribe from '../component/homeComponents/Suscribe.jsx'
 
 const Home = () => {
+  const text = "What Our Designers Have To Say";
   return (
     <>
       <section className='relative h-screen w-screen'>
@@ -22,7 +30,15 @@ const Home = () => {
         </section>
       </section>
       <WhoAreWe />
-      <NewArrival />
+      <NewArrival data={products} />
+      {/* <MeetDesigner /> */}
+      {/* <TestCarousel /> */}
+      <NewDesign />
+      <NewArrival data={products.slice(0, 4)}/>
+      <InvestMoney />
+      <CustomerReview />
+      <CustomerReview text={text} />
+      <Suscribe />
     </>
   )
 }
