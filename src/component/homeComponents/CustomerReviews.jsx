@@ -23,13 +23,13 @@ const CustomerReview = ({text}) => {
       ];
       
   return (
-    <section className='pl-6 pt-[2rem] text-[#000000] max-w-[1280px] mx-auto relative'>
+    <section className={`pl-6 text-[#000000] max-w-[1280px] mx-auto mt-[5rem] relative ${text ? 'pb-[3rem]' : 'pb-0 '}`}>
         <h2 className='text-3xl font-[700]'>{text ? text : "Our Happy Customer"}</h2>
         <section className="flex gap-[1rem] max-custom-md:grid">
             {items.map((item, index) => {
                 return (
-                    <article key={item.heading} className="pb-5 shadow-[0_50px_100px_0px_#00000025] bg-[#fbfbfb]">
-                        <div className='px-[3rem] pt-[3rem] bg-[#fbfbfb]'>
+                    <article key={item.heading} className="pb-5 shadow-[0_50px_100px_0px_#00000025] bg-[#fbfbfb] mt-[2rem]">
+                        <div className='px-[3rem] bg-[#fbfbfb]'>
                             <h3 className='text-base font-semibold'>{item.heading}</h3>
                             <p className='text-sm pt-2'>{item.paragraph}</p>
                         </div>

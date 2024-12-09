@@ -4,9 +4,9 @@ import assets from '../../assets/assets'
 
 const NewDesign = () => {
   return (
-    <section className='relative h-full'>
-        <section className='bgImage text-white mt-20'>
-            <section className='max-w-[500px] pl-[3rem] py-[5rem]'>
+    <section className='relative h-full mt-[5rem]'>
+        <section className='bgImage text-white '>
+            <section className=' px-6 py-[5rem] max-w-[1280px] mx-auto'>
                 <h2 className='text-5xl font-bold'>New Design </h2>
                 <p className='mt-4'>
                     Check today to discover our newly added designs <br/>
@@ -18,8 +18,8 @@ const NewDesign = () => {
         </section>
 
         <section className='bg-[#D7D5D2] flex justify-center gap-40 mt-2 p-10 relative'>
-            <section className='w-[200px] relative h-40 grid'>
-                <div className='absolute z-0 h-full'>
+            <section className='w-[300px] relative h-40 grid'>
+                <div className='absolute z-0 h-full w-full'>
                     <img src={assets.nd2} className='w-full h-full object-cover'  alt="" />
                 </div>
                 <div className='abosolute z-10 grid justify-center items-center'>
@@ -27,8 +27,8 @@ const NewDesign = () => {
                 </div>
             </section>
 
-            <section className='w-[200px] relative h-40 grid'>
-                <div className='absolute z-0 h-full'>
+            <section className='w-[300px] relative h-40 grid'>
+                <div className='absolute z-0 h-full w-full'>
                     <img src={assets.nd3} className='w-full h-full object-cover'  alt="" />
                 </div>
                 <div className='abosolute z-10 grid justify-center items-center'>

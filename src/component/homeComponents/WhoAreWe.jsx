@@ -3,7 +3,7 @@ import assets from '../../assets/assets'
 
 const WhoAreWe = () => {
   return (
-    <section className='grid grid-cols-[1fr_.2fr_1fr] gap-4 max-w-[1280px] mx-auto my-0 px-6 pt-20 max-custom-ssm:flex max-custom-ssm:flex-col max-custom-ssm:gap-10'>
+    <section className='grid grid-cols-[1fr_.2fr_1fr] gap-4 max-w-[1280px] mx-auto mt-[5rem] mb-0 px-6 max-custom-ssm:flex max-custom-ssm:flex-col max-custom-ssm:gap-10'>
         <section className='flex flex-col gap-6 justify-center'>
             <h2 className='text-3xl font-semibold'>Who Are We?</h2>
             <p>
@@ -21,7 +21,7 @@ const WhoAreWe = () => {
         </section>
 
         <section className='col-start-3 '>
-            <div className='flex gap-10'>
+            <div className='flex gap-2'>
                 <img src={assets.waw_female} width={'100%'}  alt="" />
                 <img src={assets.waw_male} width={'100%'} alt="" />
             </div>

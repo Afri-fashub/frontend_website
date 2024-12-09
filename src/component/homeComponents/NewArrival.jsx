@@ -1,15 +1,14 @@
 import React from 'react'
 import { CiStar } from "react-icons/ci";
 
-const NewArrival = ({data}) => {
+const NewArrival = ({data, text}) => {
 
     const allProducts = data.map((product, index) => {
         return (
             <section key={index} className='grid gap-4'>
-              {console.log(data)}
                 <div>
                     <img src={product.img} width={'100%'} alt="" />
-                    <p className='font-bold text-base'>{product.title}</p>
+                    <p className='font-bold text-base mt-4'>{product.title}</p>
                 </div>
                 <div className='flex justify-between'>
                     <p className='font-bold text-base'>{product.price}</p>
@@ -27,8 +26,8 @@ const NewArrival = ({data}) => {
     })
       
   return (
-    <section className='grid gap-6 px-6 max-w-[1280px] my-0 mx-auto pt-20'>
-        <h2 className='text-3xl font-semibold'>New Arrivals</h2>
+    <section className='grid gap-6 px-6 max-w-[1280px] mt-[5rem] mb-[0] mx-auto'>
+        <h2 className='text-3xl font-semibold'>{text ? text : 'New Arrivals'}</h2>
         <section className='grid grid-cols-4 justify-between gap-10 max-custom-md:grid-cols-3 max-custom-ssm:grid-cols-2 max-custom-sssm:grid-cols-1'>
             {allProducts}
         </section>

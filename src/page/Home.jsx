@@ -31,10 +31,9 @@ const Home = () => {
       </section>
       <WhoAreWe />
       <NewArrival data={products} />
-      {/* <MeetDesigner /> */}
-      {/* <TestCarousel /> */}
+      <MeetDesigner />
       <NewDesign />
-      <NewArrival data={products.slice(0, 4)}/>
+      <NewArrival data={products.slice(0, 4)} text={'Top Selling'}/>
       <InvestMoney />
       <CustomerReview />
       <CustomerReview text={text} />

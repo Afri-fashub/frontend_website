@@ -12,6 +12,7 @@ export default {
         'max-custom-ssm': { max: '670px' },  // Below 670px
         'max-custom-sssm': { max: '450px' }, // Below 450px
         'max-custom-msm': { max: '550px' }, // Below 550px
+        'max-custom-ssssm': { max: '343px' }, // Below 343px
         'min-custom-md': '768px' //Above 768px
       },
     },

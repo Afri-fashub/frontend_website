@@ -1,33 +1,67 @@
 import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
 
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/effect-coverflow';
 import './TestCarousel.css'
 import assets from '../../assets/assets';
 
+import 'swiper/css'; // Swiper core styles
+import 'swiper/css/effect-coverflow'
+import 'swiper/css/pagination'; // Pagination styles
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+
+
 const TestCarousel = () => {
   return (
-    <div style={{ width: '100%', maxWidth: '800px', margin: 'auto' }}>
+    <section className="carousel-container">
       <Swiper
-        modules={[Navigation]}
-        slidesPerView={3} // Show 3 slides at once
-        centeredSlides={true} // Center the active slide
-        spaceBetween={20} // Space between slides
-        loop={true} // Infinite looping
-        navigation // Enable navigation arrows
-        // className='h-[600px]'
+        modules={[Pagination, Autoplay]}
+        grabCursor={true}
+        pagination={{ clickable: true }}
+        autoplay={{ delay: 3000 }}
+        loop={true}
+        slidesPerView={3} // Adjusted for visible slides
+        centeredSlides={true}
+        spaceBetween={0} // Ensures active slide is centered // Adjust space between slides
       >
-          <SwiperSlide><img src={assets.designer1} alt="" /></SwiperSlide>
-          <SwiperSlide><img src={assets.designer1} alt="" /></SwiperSlide>
-          <SwiperSlide><img src={assets.designer1} alt="" /></SwiperSlide>
-          <SwiperSlide><img src={assets.designer1} alt="" /></SwiperSlide>
+        <SwiperSlide><img src={assets.designer1} alt="Designer 1" /></SwiperSlide>
+        <SwiperSlide><img src={assets.designer2} alt="Designer 2" /></SwiperSlide>
+        <SwiperSlide><img src={assets.designer3} alt="Designer 3" /></SwiperSlide>
+        <SwiperSlide><img src={assets.designer1} alt="Designer 1" /></SwiperSlide>
       </Swiper>
-    </div>
+    </section>
   );
 };
 
 export default TestCarousel;
+
+// import React from 'react'
+// import { EffectCards } from 'swiper/modules';
+// import Swiper from 'swiper/bundle';
+// import './TestCarousel.css'
+// import 'swiper/css/bundle'
+
+// const TestCarousel = () => {
+//   const swiper = new Swiper('.swiper', {
+//     modules: EffectCards,
+//     autoplay: true,
+//     loop: true,
+//     direction: 'horizontal',
+//     effect: 'cards',
+//   })
+
+//   return (
+//     <section className='p-8 bg-blue-500 h-screen flex justify-center items-center bg-center w-full bg-cover'>
+//       <div className="swiper bg-slate-500 w-3/6 h-3/6">
+//         <div className="swiper-wrapper">
+//           <div className="swiper-slide flex items-center justify-center text-center  bg-red-500"><img src={assets.designer1} alt="" /></div>
+//           <div className="swiper-slide flex items-center justify-center text-center bg-green-500"><img src={assets.designer2} alt="" /></div>
+//           <div className="swiper-slide flex items-center justify-center text-center bg-blue-500"><img src={assets.designer3} alt="" /></div>
+//           <div className="swiper-slide flex items-center justify-center text-center bg-yellow-500"><img src={assets.designer2} alt="" /></div>
+//         </div>
+//       </div>
+//     </section>
+//   )
+// }
+
+// export default TestCarousel
