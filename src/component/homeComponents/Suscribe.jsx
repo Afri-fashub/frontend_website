@@ -23,7 +23,7 @@ const Suscribe = () => {
                                     <input type="email" className='p-2 w-full focus-within:outline-none' placeholder='Your Email'/>
                                 </span>
                                 <span className='flex justify-center'       >
-                                    <input type=" button" className='w-[8rem] text-center py-2' value={'Submit'}/>
+                                    <input type="submit" className='w-[8rem] text-center py-2' value='Submit'/>
                                 </span>
                             </form>
                         </div>

@@ -16,6 +16,8 @@ import Login from './page/Login'
 import Male from './page/Male'
 import Shop from './page/Shop'
 import Signup from './page/Signup'
+import ProductContextProvider from './context/ProductContext'
+import LoginSIgnupContextProvider from './context/LoginSIgnupContext'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -35,7 +37,11 @@ const router = createBrowserRouter(
 )
 const App = () => {
   return (
-    <RouterProvider router={router}/>
+      <ProductContextProvider>
+        <LoginSIgnupContextProvider>
+          <RouterProvider router={router}/>
+        </LoginSIgnupContextProvider>
+      </ProductContextProvider>
   )
 }
 

@@ -10,12 +10,13 @@ import products from '../products.js'
 import InvestMoney from '../component/homeComponents/InvestMoney.jsx'
 import CustomerReview from '../component/homeComponents/CustomerReviews.jsx'
 import Suscribe from '../component/homeComponents/Suscribe.jsx'
+import Login from './Login.jsx'
 
 const Home = () => {
   const text = "What Our Designers Have To Say";
   return (
     <>
-      <section className='relative h-screen w-screen'>
+      {/* <section className='relative h-screen w-screen'>
         <section className='homeSection h-full w-full absolute z-20'>
           <section className='h-full w-full bg-black opacity-[0.5] absolute z-10'>
           </section>
@@ -37,7 +38,8 @@ const Home = () => {
       <InvestMoney />
       <CustomerReview />
       <CustomerReview text={text} />
-      <Suscribe />
+      <Suscribe /> */}
+      <Login />
     </>
   )
 }

@@ -1,8 +1,10 @@
-import React from 'react'
+import { useContext } from "react";
 import { CiStar } from "react-icons/ci";
+import { ProductContext } from "../../context/ProductContext";
 
 const NewArrival = ({data, text}) => {
-
+    const {products} = useContext(ProductContext);
+    console.log(products)
     const allProducts = data.map((product, index) => {
         return (
             <section key={index} className='grid gap-4'>

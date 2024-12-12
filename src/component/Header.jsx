@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import assets from '../assets/assets'
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -6,12 +6,15 @@ import { FiSearch } from "react-icons/fi";
 import { IoIosCart } from "react-icons/io";
 import { AiFillCloseSquare } from "react-icons/ai";
 import './Header.css'
+import { LoginSignupContext } from '../context/LoginSIgnupContext';
 
 const Header = () => {
-  const [display, setDisplay] = useState(false)
+  const [display, setDisplay] = useState(false);
+  const {page, setPage} = useContext(LoginSignupContext)
+  
   return (
     <header className='bg-[#E87A00] text-white p-6 relative'>
-      {console.log(display)}
+      {console.log(page)}
       <nav className={`flex place-items-center justify-around max-w-[1280px] my-0 mx-auto xl:justify-between max-custom-md:justify-between ${display ? 'max-custom-md:hidden' : 'max-custom-md:flex'}`}>
         <Link to='/'>
           <img src={assets.afriHubLogo} width={'85px'} alt="" />
@@ -72,8 +75,24 @@ const Header = () => {
             <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/collections'>Collection</NavLink></li>
             <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/male'>Male</NavLink></li>
             <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/female'>Female</NavLink></li>
-            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/login'>Log in</NavLink></li>
-            <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/signup'>Sign up</NavLink></li>
+            <li>
+              <NavLink onClick={() => {
+                  setDisplay(!display)
+                  setPage('Login')
+                }} 
+                className={'block text-lg '} to='/login'>
+                  Log in
+              </NavLink>
+            </li>
+            <li>
+              <NavLink onClick={() => {
+                  setDisplay(!display)
+                  setPage('Sign Up')
+                }} 
+                className={'block text-lg '} to='/login'>
+                  Sign up
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>
