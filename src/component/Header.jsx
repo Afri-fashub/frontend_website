@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
 import assets from '../assets/assets'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FiSearch } from "react-icons/fi";
@@ -7,10 +7,20 @@ import { IoIosCart } from "react-icons/io";
 import { AiFillCloseSquare } from "react-icons/ai";
 import './Header.css'
 import { LoginSignupContext } from '../context/LoginSIgnupContext';
+import { SignedInUserContext } from '../context/signedInUserContext';
+
 
 const Header = () => {
   const [display, setDisplay] = useState(false);
-  const {page, setPage} = useContext(LoginSignupContext)
+  const {page, setPage} = useContext(LoginSignupContext);
+  const {signedInUser, setSignedInUser} = useContext(SignedInUserContext);
+  const navigate = useNavigate()
+
+  const handleLogOut = () => {
+    setSignedInUser(null);
+    navigate('/login');
+  }
+
   
   return (
     <header className='bg-[#E87A00] text-white p-6 relative'>
@@ -53,15 +63,27 @@ const Header = () => {
           </li>
         </ul>
 
-        <ul className='flex place-items-center gap-7 max-custom-sm:hidden'>
-          <li>
-            <NavLink className='' to="/login">Log in</NavLink>
-            <hr className='w-2/4 mx-auto hidden border-orange-200 border-[1px]'/>
-          </li>
-          <li><NavLink className='' to="/signup">Sign Up</NavLink>
-            <hr className='w-2/4 mx-auto hidden border-orange-200 border-[1px]'/>
-          </li>
-        </ul>
+        {/* Welcome User after confirming signedInUser */}
+        {
+          signedInUser ? 
+            (
+              <div className='flex gap-7 max-custom-sm:hidden'>
+                <p>welcome {signedInUser?.firstname}</p>
+                <button onClick={handleLogOut}>Logout</button>
+              </div>
+            ) 
+              : (
+                  <ul className={`navbar flex place-items-center gap-7 max-custom-sm:hidden`}>
+                    <li>
+                      <NavLink className='' to="/login">Log in</NavLink>
+                      <hr className='w-2/4 mx-auto hidden border-orange-200 border-[1px]'/>
+                    </li>
+                    <li><NavLink className='' to="/signup">Sign Up</NavLink>
+                      <hr className='w-2/4 mx-auto hidden border-orange-200 border-[1px]'/>
+                    </li>
+                  </ul>
+                )
+        }
         <GiHamburgerMenu onClick={() => setDisplay(!display)} className='hidden max-custom-sm:flex text-2xl cursor-pointer'/>
       </nav>
 
@@ -76,21 +98,13 @@ const Header = () => {
             <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/male'>Male</NavLink></li>
             <li><NavLink onClick={() => setDisplay(!display)} className={'block text-lg '} to='/female'>Female</NavLink></li>
             <li>
-              <NavLink onClick={() => {
-                  setDisplay(!display)
-                  setPage('Login')
-                }} 
-                className={'block text-lg '} to='/login'>
-                  Log in
+              <NavLink to='login' onClick={() => setDisplay(!display)} className={'block text-lg '}>
+                Log in
               </NavLink>
             </li>
             <li>
-              <NavLink onClick={() => {
-                  setDisplay(!display)
-                  setPage('Sign Up')
-                }} 
-                className={'block text-lg '} to='/login'>
-                  Sign up
+              <NavLink to='signup' onClick={() => setDisplay(!display)} className={'block text-lg '}>
+                Sign up
               </NavLink>
             </li>
           </ul>

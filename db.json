@@ -1,0 +1,80 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstname": "John",
+      "surname": "Doe",
+      "email": "john.doe@example.com",
+      "phoneNumber": "123-456-7890",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "firstname": "Jane",
+      "surname": "Smith",
+      "email": "jane.smith@example.com",
+      "phoneNumber": "987-654-3210",
+      "password": "securePass456"
+    },
+    {
+      "id": "3",
+      "firstname": "Alice",
+      "surname": "Johnson",
+      "email": "alice.johnson@example.com",
+      "phoneNumber": "555-555-5555",
+      "password": "alice123!"
+    },
+    {
+      "id": "4",
+      "firstname": "Bob",
+      "surname": "Brown",
+      "email": "bob.brown@example.com",
+      "phoneNumber": "111-222-3333",
+      "password": "bobStrong@789"
+    },
+    {
+      "id": "5",
+      "firstname": "Charlie",
+      "surname": "Davis",
+      "email": "charlie.davis@example.com",
+      "phoneNumber": "666-777-8888",
+      "password": "charlie#456"
+    },
+    {
+      "id": "ce7e",
+      "firstname": "Omoleye",
+      "lastname": "Osadare",
+      "email": "omoleyeosadare@gmail.com",
+      "phoneNumber": "9023276818",
+      "password": "B@d419file",
+      "cPass": "B@d419file"
+    },
+    {
+      "id": "b67b",
+      "firstname": "Olamide",
+      "lastname": "Oloruntoba",
+      "email": "olamideoloruntoba34@gmail.com",
+      "phoneNumber": "9023276818",
+      "password": "Osh@Guy20",
+      "cPass": "Osh@Guy20"
+    },
+    {
+      "id": "f5ac",
+      "firstname": "Omobolaji",
+      "lastname": "Osadare",
+      "email": "beejay@gmail.com",
+      "phoneNumber": "9023276818",
+      "password": "Osh@Guy2000",
+      "cPass": "Osh@Guy2000"
+    },
+    {
+      "id": "323e",
+      "firstname": "Omoniyi",
+      "lastname": "Osadare",
+      "email": "osadareomoniyi@gmail.com",
+      "phoneNumber": "9028049582",
+      "password": "?^pWhdZi$NXa5MB",
+      "cPass": "?^pWhdZi$NXa5MB"
+    }
+  ]
+}

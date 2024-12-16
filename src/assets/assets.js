@@ -19,6 +19,7 @@ import nd2 from './images/nd2.png';
 import nd3 from './images/nd3.png';
 import invest_money from './images/invest_money.png';
 import suscribe_img from './images/suscribe_img.png';
+import signup_girl from './images/signup_girl.png'
 //Icons
 import cart_icon from './icons/cart.png'
 import search_icon from './icons/search.png'
@@ -47,6 +48,7 @@ const assets = {
     nd3,
     invest_money,
     suscribe_img,
+    signup_girl,
 
 }
 

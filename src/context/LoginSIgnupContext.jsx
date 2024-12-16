@@ -3,10 +3,10 @@ import { createContext, useState } from "react";
 export const LoginSignupContext = createContext();
 
 const LoginSIgnupContextProvider = ({children}) => {
-    const [page, setPage] = useState('Sign Up');
+    const [page, setPage] = useState('');
     const value = {
         page,
-        setPage
+        setPage,
     }
   return (
     <LoginSignupContext.Provider value={value}>
