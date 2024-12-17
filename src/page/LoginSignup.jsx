@@ -8,7 +8,7 @@ import { SignedInUserContext } from '../context/SignedInUserContext';
 
 
 const LoginSignup = () => {
-//   const {page, setPage} = useContext(LoginSignupContext);
+    const {page, setPage} = useContext(LoginSignupContext);
     const [formData, setFormData] = useState({firstname: '', lastname: '', email: '', phoneNumber: '',  password: '', cPass: '',});
     const [userDB, setUserDB] = useState(null);
     const [error, setError] = useState(null);
@@ -20,8 +20,9 @@ const LoginSignup = () => {
     const phoneRegex = /^[0-9]{10}$/;
 
     useEffect(() => {
-    fetchUser();
-    resetFormData();
+        fetchUser();
+        resetFormData();
+        console.log('UseEffect')
     }, [location.pathname]);
 
     const fetchUser = async () => {
@@ -152,6 +153,8 @@ const LoginSignup = () => {
 
     return (
         <section className='flex h-screen'>
+            {console.log("Render()")}
+            {console.log(formData)}
             <section className='w-1/2 bg-[#eff0f4] flex justify-center h-full'>
                 <div className='relative h-full w-full grid justify-center items-center'>
                     <img src={assets.afriHubLogo} className='absolute z-20 w-[130px] h-[auto] object-cover top-8 left-10' alt="" />

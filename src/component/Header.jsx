@@ -7,12 +7,11 @@ import { IoIosCart } from "react-icons/io";
 import { AiFillCloseSquare } from "react-icons/ai";
 import './Header.css'
 import { LoginSignupContext } from '../context/LoginSIgnupContext';
-import { SignedInUserContext } from '../context/signedInUserContext';
+import { SignedInUserContext } from '../context/SignedInUserContext';
 
 
 const Header = () => {
   const [display, setDisplay] = useState(false);
-  const {page, setPage} = useContext(LoginSignupContext);
   const {signedInUser, setSignedInUser} = useContext(SignedInUserContext);
   const navigate = useNavigate()
 
@@ -20,11 +19,10 @@ const Header = () => {
     setSignedInUser(null);
     navigate('/login');
   }
-
   
   return (
     <header className='bg-[#E87A00] text-white p-6 relative'>
-      {console.log(page)}
+      {/* {console.log(page)} */}
       <nav className={`flex place-items-center justify-around max-w-[1280px] my-0 mx-auto xl:justify-between max-custom-md:justify-between ${display ? 'max-custom-md:hidden' : 'max-custom-md:flex'}`}>
         <Link to='/'>
           <img src={assets.afriHubLogo} width={'85px'} alt="" />
