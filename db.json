@@ -1,0 +1,282 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "firstname": "John",
+      "surname": "Doe",
+      "email": "john.doe@example.com",
+      "phoneNumber": "123-456-7890",
+      "password": "password123"
+    },
+    {
+      "id": "2",
+      "firstname": "Jane",
+      "surname": "Smith",
+      "email": "jane.smith@example.com",
+      "phoneNumber": "987-654-3210",
+      "password": "securePass456"
+    },
+    {
+      "id": "3",
+      "firstname": "Alice",
+      "surname": "Johnson",
+      "email": "alice.johnson@example.com",
+      "phoneNumber": "555-555-5555",
+      "password": "alice123!"
+    },
+    {
+      "id": "4",
+      "firstname": "Bob",
+      "surname": "Brown",
+      "email": "bob.brown@example.com",
+      "phoneNumber": "111-222-3333",
+      "password": "bobStrong@789"
+    },
+    {
+      "id": "5",
+      "firstname": "Charlie",
+      "surname": "Davis",
+      "email": "charlie.davis@example.com",
+      "phoneNumber": "666-777-8888",
+      "password": "charlie#456"
+    },
+    {
+      "id": "ce7e",
+      "firstname": "Omoleye",
+      "lastname": "Osadare",
+      "email": "omoleyeosadare@gmail.com",
+      "phoneNumber": "9023276818",
+      "password": "B@d419file",
+      "cPass": "B@d419file"
+    },
+    {
+      "id": "b67b",
+      "firstname": "Olamide",
+      "lastname": "Oloruntoba",
+      "email": "olamideoloruntoba34@gmail.com",
+      "phoneNumber": "9023276818",
+      "password": "Osh@Guy20",
+      "cPass": "Osh@Guy20"
+    },
+    {
+      "id": "f5ac",
+      "firstname": "Omobolaji",
+      "lastname": "Osadare",
+      "email": "beejay@gmail.com",
+      "phoneNumber": "9023276818",
+      "password": "Osh@Guy2000",
+      "cPass": "Osh@Guy2000"
+    },
+    {
+      "id": "323e",
+      "firstname": "Omoniyi",
+      "lastname": "Osadare",
+      "email": "osadareomoniyi@gmail.com",
+      "phoneNumber": "9028049582",
+      "password": "?^pWhdZi$NXa5MB",
+      "cPass": "?^pWhdZi$NXa5MB"
+    }
+  ],
+  "products": [
+    {
+      "id": "201",
+      "img": "/src/assets/images/image.png",
+      "title": "Plain & Pattern (shirt)",
+      "price": "25,000",
+      "rating": 4.5
+    },
+    {
+      "id": "202",
+      "img": "/src/assets/images/two.png",
+      "title": "Ankara Jumpsuit",
+      "price": "25,000",
+      "rating": 4.7
+    },
+    {
+      "id": "203",
+      "img": "/src/assets/images/three.png",
+      "title": "Plain & Pattern (shirt)",
+      "price": "25,000",
+      "rating": 4.2
+    },
+    {
+      "id": "204",
+      "img": "/src/assets/images/four.png",
+      "title": "Flare Ankara Dress",
+      "price": "25,000",
+      "rating": 3.8
+    },
+    {
+      "id": "205",
+      "img": "/src/assets/images/five.png",
+      "title": "Plain & Pattern (shirt)",
+      "price": "25,000",
+      "rating": 5.0
+    },
+    {
+      "id": "206",
+      "img": "/src/assets/images/six.png",
+      "title": "Long Ankara Shirt Dress",
+      "price": "25,000",
+      "rating": 4.3
+    },
+    {
+      "id": "207",
+      "img": "/src/assets/images/seven.png",
+      "title": "Plain & Pattern (shirt)",
+      "price": "25,000",
+      "rating": 4.6
+    },
+    {
+      "id": "208",
+      "img": "/src/assets/images/eight.png",
+      "title": "Straight Ankara Dess",
+      "price": "25,000",
+      "rating": 3.9
+    }
+  ],
+  "malehub": [
+    {
+      "id": "m101",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Casual Blazer",
+      "outfitPrice": "30,000",
+      "designerName": "John Tailor"
+    },
+    {
+      "id": "m102",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Traditional Agbada",
+      "outfitPrice": "50,000",
+      "designerName": "Olu Designs"
+    },
+    {
+      "id": "m103",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Denim Jacket",
+      "outfitPrice": "25,000",
+      "designerName": "Alpha Threads"
+    },
+    {
+      "id": "m104",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Office Suit",
+      "outfitPrice": "60,000",
+      "designerName": "Elegant Apparel"
+    },
+    {
+      "id": "m105",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Casual Polo",
+      "outfitPrice": "10,000",
+      "designerName": "Classic Wear"
+    },
+    {
+      "id": "m106",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Leather Jacket",
+      "outfitPrice": "40,000",
+      "designerName": "Urban Style"
+    },
+    {
+      "id": "m107",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Kaftan",
+      "outfitPrice": "35,000",
+      "designerName": "Heritage Designs"
+    },
+    {
+      "id": "m108",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Sweatshirt",
+      "outfitPrice": "15,000",
+      "designerName": "Comfort Wear"
+    },
+    {
+      "id": "m109",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Chinos Trousers",
+      "outfitPrice": "20,000",
+      "designerName": "Modern Attire"
+    },
+    {
+      "id": "m110",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Traditional Wrapper",
+      "outfitPrice": "28,000",
+      "designerName": "Cultural Tailor"
+    }
+  ],
+  "femalehub": [
+    {
+      "id": "f101",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Ankara Gown",
+      "outfitPrice": "40,000",
+      "designerName": "Lola Couture"
+    },
+    {
+      "id": "f102",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Evening Dress",
+      "outfitPrice": "70,000",
+      "designerName": "Ada Fashion House"
+    },
+    {
+      "id": "f103",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Maxi Dress",
+      "outfitPrice": "45,000",
+      "designerName": "Elegance by Joy"
+    },
+    {
+      "id": "f104",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Crop Top & Skirt",
+      "outfitPrice": "30,000",
+      "designerName": "Trendy Threads"
+    },
+    {
+      "id": "f105",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Ankara Jumpsuit",
+      "outfitPrice": "50,000",
+      "designerName": "Ethnic Fashion"
+    },
+    {
+      "id": "f106",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Silk Blouse",
+      "outfitPrice": "25,000",
+      "designerName": "Soft Luxe"
+    },
+    {
+      "id": "f107",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Kente Wrap Dress",
+      "outfitPrice": "60,000",
+      "designerName": "African Elegance"
+    },
+    {
+      "id": "f108",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Off-Shoulder Top",
+      "outfitPrice": "18,000",
+      "designerName": "Modern Chic"
+    },
+    {
+      "id": "f109",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Floral Dress",
+      "outfitPrice": "35,000",
+      "designerName": "Bloom Attire"
+    },
+    {
+      "id": "f110",
+      "image": "https://via.placeholder.com/150",
+      "outfitName": "Peplum Top",
+      "outfitPrice": "22,000",
+      "designerName": "Refined Couture"
+    }
+  ]
+}
