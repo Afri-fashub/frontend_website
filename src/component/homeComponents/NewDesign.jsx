@@ -1,6 +1,7 @@
 import React from 'react'
 import './NewDesign.css'
 import assets from '../../assets/assets'
+import { Link } from 'react-router-dom'
 
 const NewDesign = () => {
   return (
@@ -18,23 +19,26 @@ const NewDesign = () => {
         </section>
 
         <section className='bg-[#D7D5D2] flex justify-center gap-40 mt-2 p-10 relative'>
-            <section className='w-[300px] relative h-40 grid'>
-                <div className='absolute z-0 h-full w-full'>
-                    <img src={assets.nd2} className='w-full h-full object-cover'  alt="" />
-                </div>
-                <div className='abosolute z-10 grid justify-center items-center'>
-                    <p className='bg-white p-1'>Male Hub</p>
-                </div>
-            </section>
-
-            <section className='w-[300px] relative h-40 grid'>
-                <div className='absolute z-0 h-full w-full'>
-                    <img src={assets.nd3} className='w-full h-full object-cover'  alt="" />
-                </div>
-                <div className='abosolute z-10 grid justify-center items-center'>
-                    <p className='bg-white p-1'>Female Hub</p>
-                </div>
-            </section>
+            <Link to='male'>
+                <section className='w-[300px] relative h-40 grid'>
+                    <div className='absolute z-0 h-full w-full'>
+                        <img src={assets.nd2} className='w-full h-full object-cover'  alt="" />
+                    </div>
+                    <div className='abosolute z-10 grid justify-center items-center'>
+                        <p className='bg-white p-1'>Male Hub</p>
+                    </div>
+                </section>
+            </Link>
+            <Link to={'female'}>
+                <section className='w-[300px] relative h-40 grid'>
+                    <div className='absolute z-0 h-full w-full'>
+                        <img src={assets.nd3} className='w-full h-full object-cover'  alt="" />
+                    </div>
+                    <div className='abosolute z-10 grid justify-center items-center'>
+                        <p className='bg-white p-1'>Female Hub</p>
+                    </div>
+                </section>
+            </Link>
         </section>
     </section>
   )

@@ -75,6 +75,33 @@
       "phoneNumber": "9028049582",
       "password": "?^pWhdZi$NXa5MB",
       "cPass": "?^pWhdZi$NXa5MB"
+    },
+    {
+      "id": "7fef",
+      "firstname": "Roberts",
+      "lastname": "Zane",
+      "email": "robertzane@office.com",
+      "phoneNumber": "9057665074",
+      "password": "B@d419file",
+      "cPass": "B@d419file"
+    },
+    {
+      "id": "630a",
+      "firstname": "Valiant",
+      "lastname": "Emmanuel",
+      "email": "ve@gmail.com",
+      "phoneNumber": "9023276818",
+      "password": "B@d419file",
+      "cPass": "B@d419file"
+    },
+    {
+      "id": "0c7f",
+      "firstname": "happy",
+      "lastname": "rahman",
+      "email": "happyrahman@gmail.com",
+      "phoneNumber": "9023276818",
+      "password": "B@d419file",
+      "cPass": "B@d419file"
     }
   ],
   "products": [
@@ -111,7 +138,7 @@
       "img": "/src/assets/images/five.png",
       "title": "Plain & Pattern (shirt)",
       "price": "25,000",
-      "rating": 5.0
+      "rating": 5
     },
     {
       "id": "206",
@@ -130,7 +157,7 @@
     {
       "id": "208",
       "img": "/src/assets/images/eight.png",
-      "title": "Straight Ankara Dess",
+      "title": "Straight Ankara Dress",
       "price": "25,000",
       "rating": 3.9
     }
@@ -198,85 +225,71 @@
       "outfitName": "Chinos Trousers",
       "outfitPrice": "20,000",
       "designerName": "Modern Attire"
-    },
-    {
-      "id": "m110",
-      "image": "https://via.placeholder.com/150",
-      "outfitName": "Traditional Wrapper",
-      "outfitPrice": "28,000",
-      "designerName": "Cultural Tailor"
     }
   ],
   "femalehub": [
     {
       "id": "f101",
-      "image": "https://via.placeholder.com/150",
+      "image": "/src/assets/images/femalehub/female1.png",
       "outfitName": "Ankara Gown",
       "outfitPrice": "40,000",
       "designerName": "Lola Couture"
     },
     {
       "id": "f102",
-      "image": "https://via.placeholder.com/150",
+      "image": "/src/assets/images/femalehub/female2.png",
       "outfitName": "Evening Dress",
       "outfitPrice": "70,000",
       "designerName": "Ada Fashion House"
     },
     {
       "id": "f103",
-      "image": "https://via.placeholder.com/150",
+      "image": "/src/assets/images/femalehub/female3.png",
       "outfitName": "Maxi Dress",
       "outfitPrice": "45,000",
       "designerName": "Elegance by Joy"
     },
     {
       "id": "f104",
-      "image": "https://via.placeholder.com/150",
+      "image": "/src/assets/images/femalehub/female4.png",
       "outfitName": "Crop Top & Skirt",
       "outfitPrice": "30,000",
       "designerName": "Trendy Threads"
     },
     {
       "id": "f105",
-      "image": "https://via.placeholder.com/150",
+      "image": "/src/assets/images/femalehub/female5.png",
       "outfitName": "Ankara Jumpsuit",
       "outfitPrice": "50,000",
       "designerName": "Ethnic Fashion"
     },
     {
       "id": "f106",
-      "image": "https://via.placeholder.com/150",
+      "image": "/src/assets/images/femalehub/female6.png",
       "outfitName": "Silk Blouse",
       "outfitPrice": "25,000",
       "designerName": "Soft Luxe"
     },
     {
       "id": "f107",
-      "image": "https://via.placeholder.com/150",
+      "image": "/src/assets/images/femalehub/female3.png",
       "outfitName": "Kente Wrap Dress",
       "outfitPrice": "60,000",
       "designerName": "African Elegance"
     },
     {
       "id": "f108",
-      "image": "https://via.placeholder.com/150",
-      "outfitName": "Off-Shoulder Top",
-      "outfitPrice": "18,000",
-      "designerName": "Modern Chic"
-    },
-    {
-      "id": "f109",
-      "image": "https://via.placeholder.com/150",
-      "outfitName": "Floral Dress",
+      "image": "/src/assets/images/femalehub/female3.png",
+      "outfitName": "Office Shirt & Pants",
       "outfitPrice": "35,000",
-      "designerName": "Bloom Attire"
+      "designerName": "Corporate Style"
     },
     {
-      "id": "f110",
-      "image": "https://via.placeholder.com/150",
-      "outfitName": "Peplum Top",
-      "outfitPrice": "22,000",
-      "designerName": "Refined Couture"
+      "id": "f108",
+      "image": "/src/assets/images/femalehub/female3.png",
+      "outfitName": "Office Shirt & Pants",
+      "outfitPrice": "35,000",
+      "designerName": "Corporate Style"
     }
   ]
 }

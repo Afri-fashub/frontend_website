@@ -37,14 +37,6 @@ const assets = {
     heroImg,
     waw_female,
     waw_male,
-    img,
-    two,
-    three,
-    four,
-    five,
-    six,
-    seven,
-    eight,
     designer1,
     designer2,
     designer3,
@@ -60,5 +52,14 @@ const assets = {
     ab,
     abt,
 }
+
+export const productImg = [img,
+    two,
+    three,
+    four,
+    five,
+    six,
+    seven,
+    eight,]
 
 export default assets;

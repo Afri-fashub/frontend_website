@@ -1,9 +1,11 @@
+/* DO NOT TOUCH THIS FILE - OMOLEYE */
+
 /* Container for the carousel */
 .carousel-container {
   width: 100%;
   overflow: hidden; /* Prevent content overflow */
 }
-
+/* DO NOT TOUCH THIS FILE - OMOLEYE */
 /* Swiper main container */
 .swiper {
   width: 100%;

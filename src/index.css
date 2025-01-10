@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 
+
 html {
     height: 100vh;
+}
+
+* {
+    box-sizing: border-box;
+    /* border: 2px solid green; */
 }

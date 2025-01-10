@@ -1,3 +1,4 @@
+/* DO NOT TOUCH THIS FILE - OMOLEYE */
 import React from 'react';
 
 import './TestCarousel.css'
@@ -10,7 +11,7 @@ import 'swiper/css/pagination'; // Pagination styles
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 
-
+/* DO NOT TOUCH THIS FILE - OMOLEYE */
 const TestCarousel = () => {
   return (
     <section className="carousel-container">

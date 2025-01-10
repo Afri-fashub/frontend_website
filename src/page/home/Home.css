@@ -1,0 +1,6 @@
+.homeSection {
+    background-image: url('/src/assets/images/hero_img.png');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Avoid tiling */
+}

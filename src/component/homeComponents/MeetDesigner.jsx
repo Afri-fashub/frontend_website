@@ -2,6 +2,7 @@ import React from 'react'
 import 'swiper/css'; // Swiper core styles
 import 'swiper/css/effect-coverflow'
 import 'swiper/css/pagination'; // Pagination styles
+import './MeetDesigner.css'
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
@@ -23,14 +24,26 @@ const MeetDesigner = () => {
           centeredSlides={true}
           spaceBetween={0} // Ensures active slide is centered // Adjust space between slides
         >
-          <SwiperSlide><img src={assets.designer1} alt="Designer 1" /></SwiperSlide>
-          <SwiperSlide><img src={assets.designer2} alt="Designer 2" /></SwiperSlide>
-          <SwiperSlide><img src={assets.designer3} alt="Designer 3" /></SwiperSlide>
-          <SwiperSlide><img src={assets.designer1} alt="Designer 1" /></SwiperSlide>
+          <SwiperSlide>
+            <img src={assets.designer1} alt="Designer 1" />
+            <p className='absolute items-end left-4 bottom-4 bg-white w-[8rem] h-[3rem] flex justify-center items-center '>Vera Wang</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={assets.designer2} alt="Designer 2" />
+            <p className='absolute items-end left-4 bottom-4 bg-white w-[8rem] h-[3rem] flex justify-center items-center'>Adaobi Nwankwo</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={assets.designer3} alt="Designer 3" />
+            <p className='absolute items-end left-4 bottom-4 bg-white w-[8rem] h-[3rem] flex justify-center items-center'>Sade Adebayo</p>
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src={assets.designer1} alt="Designer 1" />
+            <p className='absolute items-end left-4 bottom-4 bg-white w-[8rem] h-[3rem] flex justify-center items-center'>Zainab Abubakar</p>
+          </SwiperSlide>
         </Swiper>
       </section>
     </section>
-  );
+  );  
 };
 
 export default MeetDesigner

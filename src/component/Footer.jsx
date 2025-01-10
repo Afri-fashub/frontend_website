@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { CiMail } from "react-icons/ci";
 import { MdLocalPhone } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
@@ -9,10 +8,10 @@ import { ImPinterest2 } from "react-icons/im";
 
 const Footer = () => {
   return (
-    <footer className='relative mt-10 px-6'>
-      <nav className='grid grid-cols-[.8fr_2.2fr] justify-around max-w-[1280px] my-0 mx-auto relative max-custom-md:grid-cols-1'>
+    <footer className='mt-10 px-6 py-10'>
+      <nav className='myCustomNav grid grid-cols-[.7fr_2.2fr] justify-around max-w-[1280px] my-0 mx-auto relative max-custom-md:grid-cols-1'>
         <div className='grid place-items-center'>
-          <h1 className='text-3xl font-semibold'>AFRI FASHUB</h1>
+          <h1 className='text-4xl font-semibold'>AFRI FASHUB</h1>
         </div>
 
         <section className='grid grid-cols-4 max-custom-md:mt-10 max-custom-ssm:flex max-custom-ssm:flex-wrap max-custom-ssm:justify-between max-custom-ssm:gap-10 max-custom-ssssm:justify-between max-custom-ssssm:grid-cols-2'>
@@ -63,7 +62,7 @@ const Footer = () => {
             </ul>
           </section>
 
-          <section className='justify-self-end max-custom-md:justify-self-center'>
+          <section className='justify-self-center max-custom-md:justify-self-center'>
             <h2 className='text-xl font-normal'>Shopping</h2>
             <ul className='grid gap-3 mt-3'>
               <li><a href="">Your cart</a></li>

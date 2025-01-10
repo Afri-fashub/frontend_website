@@ -1,14 +1,15 @@
 import React from 'react'
 import Header from '../component/Header'
 import Footer from '../component/Footer'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLoaderData } from 'react-router-dom'
 
 const RootLayout = () => {
+  const data = useLoaderData();
   return (
     <>
       <Header />
       <main>
-        <Outlet />
+        <Outlet context={data}/>
       </main>
       <Footer />
     </>
