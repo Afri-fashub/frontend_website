@@ -26,7 +26,7 @@ const MeetDesigner = () => {
         >
           <SwiperSlide>
             <img src={assets.designer1} alt="Designer 1" />
-            <p className='absolute items-end left-4 bottom-4 bg-white w-[8rem] h-[3rem] flex justify-center items-center '>Vera Wang</p>
+            <p className='absolute items-end left-4 bottom-4 bg-white w-[8rem] h-[3rem] flex justify-center items-center'>Vera Wang</p>
           </SwiperSlide>
           <SwiperSlide>
             <img src={assets.designer2} alt="Designer 2" />

@@ -31,6 +31,7 @@ const Home = () => {
         </section>
       </section>
       <WhoAreWe />
+      {console.log(myproducts)}
       {myproducts && <NewArrival data={myproducts} />}
       <MeetDesigner />
       <NewDesign />
