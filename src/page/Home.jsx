@@ -11,6 +11,7 @@ import InvestMoney from '../component/homeComponents/InvestMoney.jsx'
 import CustomerReview from '../component/homeComponents/CustomerReviews.jsx'
 import Suscribe from '../component/homeComponents/Suscribe.jsx'
 import Login from './Login.jsx'
+import HelpCenter from './help/HelpCenter.jsx'
 
 const Home = () => {
   const text = "What Our Designers Have To Say";
