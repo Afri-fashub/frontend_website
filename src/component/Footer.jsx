@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { CiMail } from "react-icons/ci";
 import { MdLocalPhone } from "react-icons/md";
 import { FaXTwitter } from "react-icons/fa6";
@@ -22,8 +21,11 @@ const Footer = () => {
               <li><a href="">How to apply</a></li>
               <li><a href="">Buy now</a></li>
               <li><a href="">Testimonials</a></li>
-              <li><a href="">Help center</a></li>
+              <li><a href="/Help">Help center</a></li>
               <li><a href="">Contact</a></li>
+              <li><a href="/privacy">Privacy policy</a></li>
+              <li><a href="/r_e_policy">Return And Exchange policy</a></li>
+              <li><a href="/fit_guide">Fit Guide</a></li>
             </ul>
           </section>
 

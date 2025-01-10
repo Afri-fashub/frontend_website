@@ -19,10 +19,15 @@ import nd2 from './images/nd2.png';
 import nd3 from './images/nd3.png';
 import invest_money from './images/invest_money.png';
 import suscribe_img from './images/suscribe_img.png';
-import signup_girl from './images/signup_girl.png'
+import signup_girl from './images/signup_girl.png';
+import hero_img from './images/about_image.png';
+import front from './images/about_image_front.png';
+import back from './images/about_image_back.png';
+import ab from './images/ab.png';
+import abt from './images/abt.png'
 //Icons
-import cart_icon from './icons/cart.png'
-import search_icon from './icons/search.png'
+import cart_icon from './icons/cart.png';
+import search_icon from './icons/search.png';
 
 
 const assets = {
@@ -41,7 +46,11 @@ const assets = {
     invest_money,
     suscribe_img,
     signup_girl,
-
+    hero_img,
+    front,
+    back,
+    ab,
+    abt,
 }
 
 export const productImg = [img,
