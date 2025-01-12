@@ -6,7 +6,7 @@ const NewArrivalCard = ({ product }) => {
   return (
     <section className="grid gap-4">
       <div>
-        <img src={image} width={"100%"} alt="" />
+        <img src={product.img} width={"100%"} alt="" />
         <p className="font-bold text-base mt-4">{product.title}</p>
       </div>
       <div className="flex justify-between">
