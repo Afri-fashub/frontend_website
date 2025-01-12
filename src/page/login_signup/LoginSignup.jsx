@@ -15,6 +15,7 @@ const LoginSignup = () => {
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const passwordRegex = /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/;
     const phoneRegex = /^[0-9]{10}$/;
+    
 
     // Call the useEffcet function anytime location.pathname changes
     useEffect(() => {

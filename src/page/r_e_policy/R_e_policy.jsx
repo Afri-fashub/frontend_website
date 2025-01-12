@@ -172,8 +172,8 @@ const R_e_policy = () => {
           egestas cras. Nunc urna volutpat sit viverra nunc congue sem.
         </p>
       </div>
-      <div className="flex justify-center" />
-      <div className="mt-6 bg-gradient-to-r from-[#e87a00] via-[#f4bd80] to-white w-3/4 h-1 "></div>
+      {/* <div className="flex justify-center" />
+      <div className="mt-6 bg-gradient-to-r from-[#e87a00] via-[#f4bd80] to-white w-3/4 h-1 "></div> */}
     </div>
   );
 };

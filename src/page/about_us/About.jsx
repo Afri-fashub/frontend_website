@@ -93,11 +93,9 @@ const About = () => {
           </div>
         </section>
         <div className="h-[200px] bg-[#e87a00] "></div>
-        <div className="flex justify-center">
-          <div className="mt-6 bg-gradient-to-r from-[#e87a00] via-[#f4bd80] to-white w-3/4 h-1 "></div>
-        </div>
       </div>
     </>
   );
 };
+
 export default About;

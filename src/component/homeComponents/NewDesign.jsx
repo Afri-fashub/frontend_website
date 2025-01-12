@@ -18,9 +18,9 @@ const NewDesign = () => {
             {/* <section></section> */}
         </section>
 
-        <section className='bg-[#D7D5D2] flex justify-center gap-40 mt-2 p-10 relative'>
+        <section className='bg-[#D7D5D2] flex justify-center max-custom-msm:grid max-custom-msm:gap-10 gap-20 sm:gap-20 md:gap-32 lg:gap-40 mt-2 p-10 relative'>
             <Link to='male'>
-                <section className='w-[300px] relative h-40 grid'>
+                <section className='max-custom-msm:w-[300px] max-custom-sm:w-[200px] w-[300px] relative h-40 grid'>
                     <div className='absolute z-0 h-full w-full'>
                         <img src={assets.nd2} className='w-full h-full object-cover'  alt="" />
                     </div>
@@ -30,7 +30,7 @@ const NewDesign = () => {
                 </section>
             </Link>
             <Link to={'female'}>
-                <section className='w-[300px] relative h-40 grid'>
+                <section className='max-custom-msm:w-[300px] max-custom-sm:w-[200px] w-[300px] relative h-40 grid'>
                     <div className='absolute z-0 h-full w-full'>
                         <img src={assets.nd3} className='w-full h-full object-cover'  alt="" />
                     </div>

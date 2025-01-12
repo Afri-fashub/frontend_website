@@ -23,7 +23,7 @@ const CustomerReview = ({text}) => {
       ];
       
   return (
-    <section className={` text-[#000000] w-[1280px] mx-auto mt-[5rem] mb-[3rem] relative`}>
+    <section className={` text-[#000000] max-w-[1280px] mx-auto mt-[5rem] mb-[3rem] relative px-6`}>
         <h2 className='text-3xl font-[700]'>{text ? text : "Our Happy Customer"}</h2>
         <section className="flex gap-[1rem] max-custom-md:grid">
             {items.map((item, index) => {
