@@ -107,7 +107,7 @@
   "products": [
     {
       "id": "201",
-      "img": "/src/assets/images/image.png",
+      "img": "./src/assets/images/image.png",
       "title": "Plain & Pattern (shirt)",
       "price": "25,000",
       "rating": 4.5

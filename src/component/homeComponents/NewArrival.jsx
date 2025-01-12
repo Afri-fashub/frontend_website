@@ -17,7 +17,6 @@ const NewArrival = ({data, text}) => {
             <section className='grid grid-cols-4 justify-between gap-10 max-custom-md:grid-cols-3 max-custom-ssm:grid-cols-2 max-custom-sssm:grid-cols-1'>
                 {newArrivalList}
             </section>
-
         </section>
   )
 }
