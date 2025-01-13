@@ -107,56 +107,56 @@
   "products": [
     {
       "id": "201",
-      "img": "src/assets/images/image.png",
+      "img": "/assets/images/image.png",
       "title": "Plain & Pattern (shirt)",
       "price": "25,000",
       "rating": 4.5
     },
     {
       "id": "202",
-      "img": "/src/assets/images/two.png",
+      "img": "/assets/images/two.png",
       "title": "Ankara Jumpsuit",
       "price": "25,000",
       "rating": 4.7
     },
     {
       "id": "203",
-      "img": "/src/assets/images/three.png",
+      "img": "/assets/images/three.png",
       "title": "Plain & Pattern (shirt)",
       "price": "25,000",
       "rating": 4.2
     },
     {
       "id": "204",
-      "img": "/src/assets/images/four.png",
+      "img": "/assets/images/four.png",
       "title": "Flare Ankara Dress",
       "price": "25,000",
       "rating": 3.8
     },
     {
       "id": "205",
-      "img": "/src/assets/images/five.png",
+      "img": "/assets/images/five.png",
       "title": "Plain & Pattern (shirt)",
       "price": "25,000",
       "rating": 5
     },
     {
       "id": "206",
-      "img": "/src/assets/images/six.png",
+      "img": "/assets/images/six.png",
       "title": "Long Ankara Shirt Dress",
       "price": "25,000",
       "rating": 4.3
     },
     {
       "id": "207",
-      "img": "/src/assets/images/seven.png",
+      "img": "/assets/images/seven.png",
       "title": "Plain & Pattern (shirt)",
       "price": "25,000",
       "rating": 4.6
     },
     {
       "id": "208",
-      "img": "/src/assets/images/eight.png",
+      "img": "/assets/images/eight.png",
       "title": "Straight Ankara Dress",
       "price": "25,000",
       "rating": 3.9
