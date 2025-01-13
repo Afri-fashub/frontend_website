@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# My own ignore
+push.sh
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
