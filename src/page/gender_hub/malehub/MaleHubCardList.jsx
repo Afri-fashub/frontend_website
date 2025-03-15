@@ -1,24 +1,19 @@
-import React from 'react'
-import useFetchData from '../../../hooks/useFetchData'
-import MaleHubCard from './MaleHubCard';
+import React from 'react';
 import { Link } from 'react-router-dom';
+import MaleHubCard from './MaleHubCard';
+import maleHubData from '../../../Data/data'; // Import the array
 
 const MaleHubCardList = () => {
-    const url = 'http://localhost:7000/malehub';
-    const {data: maleHub, loading, error} = useFetchData(url);
-
-    const maleHubList = maleHub?.map((maleHubItem, index) => {
-        return (
-            <Link key={maleHubItem?.id} to={`${maleHubItem?.id}`}>
-                <MaleHubCard maleHubItem={maleHubItem}/>
-            </Link>
-        )
-    })
   return (
-    <>
-        {maleHubList}
-    </>
-  )
-}
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      {maleHubData.map((maleHubItem) => (
+        <Link key={maleHubItem.id} to={`/male/${maleHubItem.id}`}>
+          <MaleHubCard maleHubItem={maleHubItem} />
+        </Link>
+      ))}
+    </div>
+  );
+};
 
-export default MaleHubCardList
+export default MaleHubCardList;
+
